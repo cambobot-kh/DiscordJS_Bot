@@ -15,9 +15,9 @@ module.exports = {
     }
   },
   usage : () => {
-    return "<prefix>test <arguments>";
+    return "<prefix>reload <command>";
   },
   description : () => {
-    return "Used as a test command.";
+    return "Used for reloading commands so the bot doesn't need restarting.";
   }
 }
