@@ -8,7 +8,7 @@ module.exports = {
    * future comands
    */
   run : (args, Client, msg) => {
-    console.log("Ran with args: " + args);
+    // code ran here
   },
   usage : () => {
     return "<prefix>test <arguments>";
