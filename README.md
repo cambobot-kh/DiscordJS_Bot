@@ -6,3 +6,7 @@
 4) open up config.json, and replace the token with your bots token
 5) `node index.js`
 6) success!
+
+
+## Credits
+1) Discord.JS -> The Discord API Wrapper Used :D
