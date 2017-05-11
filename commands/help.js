@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const fs = require("fs");
 
 module.exports = {
   /*
@@ -20,12 +21,14 @@ module.exports = {
           msg.channel.send("```Command: \"" + args[0] + "\" does not exist!```");
         }
       } else {
-        var embed = new Discord.RichEmbed();
-        embed.setColor(0xff00ff)
-        embed.setTitle("COMMAND: help");
-        embed.addField("Usage:", "<prefix>help <command>");
-        embed.addField("Description:", "Used for getting help with commands.");
-        msg.channel.send("", { embed: embed });
+        var message = "```\nCommands:\n";
+        fs.readdir("./commands/", (err, files) => {
+          files.forEach(file => {
+            message += file.replace(".js", "") + ", ";
+          });
+          message += "\n```";
+          msg.channel.send(message);
+        });
       }
   },
   usage : () => {
