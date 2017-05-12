@@ -1,6 +1,6 @@
 module.exports = {
-  run : Client => {
+  run : () => {
     // just our message to make when we are connected
-    console.log("Connected...");
+    console.log("Bot connected...");
   }
 }
