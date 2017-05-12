@@ -1,3 +1,5 @@
+## Project moved to https://github.com/Kernelization/Bots/tree/master/%40diredan
+
 ## Installation
 
 1) `git clone https://github.com/DireDan/DiscordJS_Bot.git`
